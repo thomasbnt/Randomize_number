@@ -23,17 +23,6 @@
 
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="assets/js/init.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js').then(function(registration) {
-                    console.log('✔ [Service Worker Registered] Offline mode available.\nWith scope: ', registration.scope)
-                }, function(err) {
-                    console.log('ServiceWorker registration failed: ', err)
-                })
-            })
-        }
-    </script>
 </head>
 <body>
     <h1 id="random" onclick="Load(0,999)">Click!</h1>
