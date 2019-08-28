@@ -6,16 +6,14 @@ function Load(min, max) {
     document.getElementById('random').textContent = out
     document.title = out
 }
-async function registerSW() {
-    if (!navigator.serviceWorker) {return}
+if (!navigator.serviceWorker) { console.log('!nagivator SW') }
 
-    const registrations = await navigator.serviceWorker.getRegistrations()
-    for (const reg of registrations) {
-        await reg.unregister()
-    }
-
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-            .then(function () { console.log("✔ [Service Worker Registered] Offline mode available.")})
-    })
+const registrations = await navigator.serviceWorker.getRegistrations()
+for (const reg of registrations) {
+    await reg.unregister()
 }
+
+window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+        .then(function () { console.log("✔ [Service Worker Registered] Offline mode available.")})
+})
