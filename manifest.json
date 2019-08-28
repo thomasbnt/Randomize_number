@@ -4,6 +4,7 @@
     "description": "It's just a randomizer of numbers.",
     "start_url": "./index.html",
     "display": "standalone",
+    "orientation": "portrait",
     "background_color": "#fdfdfd",
     "theme_color": "#488F3D",
     "homepage_url": "https://thomasbnt.github.io/Randomize_number/",
