@@ -6,8 +6,9 @@ body {
   background: #fdfdfd; 
 }
 button {
-  padding: 10px 15px;
+  padding: 10px 30px;
   margin: 3px;
+  cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
