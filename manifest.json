@@ -2,7 +2,7 @@
     "name": "Randomize_number",
     "short_name": "R(Letter)",
     "description": "It's just a randomizer of numbers.",
-    "start_url": "/?source=pwa",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#488F3D",
     "theme_color": "#488F3D",
