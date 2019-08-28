@@ -1,8 +1,6 @@
 [![Patreon support](https://img.shields.io/endpoint.svg?url=https://shieldsio-patreon.herokuapp.com/thomasbnt&style=flat-square)](https://www.patreon.com/thomasbnt)
 [![Follow me on Twitter](https://flat.badgen.net/badge/Follow%20Me/@Hyprimort/33A1F2?icon=twitter)](https://twitter.com/Hyprimort)
 [![GNU GPL v3.0](https://flat.badgen.net/github/license/thomasbnt/Randomize_number)](LICENSE)
-____
-
 
 ## I Integrations
 
@@ -17,7 +15,7 @@ function Load(min, max) {
     document.title = out // Edit the title of page
 }
 ```
-<img src="assets/img/favicon.png" alt="Logo" align="right" />
+<img src="assets/img/manifest/192x192.png" alt="Logo" align="right" />
 
 **Randomize_number** is a simple script with PWA ([Manifest](manifest.json) and [init.js for install SW](assets/js/init.js)) and [Service Worker](sw.js).
 
