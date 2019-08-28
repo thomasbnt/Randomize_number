@@ -24,9 +24,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 if (!navigator.serviceWorker) { console.log('!nagivator SW') }
 
 const registrations = navigator.serviceWorker.getRegistrations()
-for (const reg of registrations) {
-    reg.unregister()
-}
+
 
 window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js')
