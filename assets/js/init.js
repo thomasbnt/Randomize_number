@@ -6,9 +6,24 @@ function Load(min, max) {
     document.getElementById('random').textContent = out
     document.title = out
 }
+
+window.addEventListener('beforeinstallprompt', function(e) {
+
+    e.userChoice.then(function(choiceResult) {
+
+        console.log(choiceResult.outcome)
+
+        if (choiceResult.outcome == 'dismissed') {
+            console.log('User cancelled home screen install')
+        } else {
+            console.log('User added to home screen')
+        }
+    })
+})
+
 if (!navigator.serviceWorker) { console.log('!nagivator SW') }
 
-const registrations = await navigator.serviceWorker.getRegistrations()
+const registrations = navigator.serviceWorker.getRegistrations()
 for (const reg of registrations) {
     reg.unregister()
 }
