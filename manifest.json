@@ -1,0 +1,27 @@
+{
+    "name": "Randomize_number",
+    "short_name": "R(Letter)",
+    "description": "It's just a randomizer of numbers.",
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "background_color": "#488F3D",
+    "theme_color": "#488F3D",
+    "homepage_url": "https://thomasbnt.github.io/Randomize_number/",
+    "icons": [
+        {
+            "src": "assets/img/manifest/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/manifest/128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/manifest/512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

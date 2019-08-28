@@ -1,53 +1,19 @@
+:root {
+    --primary-color: #488F3D;
+}
 body {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fdfdfd; 
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfdfd;
+    font-family: 'Rubik','Open Sans', SFMono-Regular, Menlo, Monaco, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-button {
-  padding: 10px 30px;
-  margin: 3px;
-  cursor: pointer;
-  user-select: none;
-  border: 1px solid transparent;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.default-color {
-    color: #314759;
-}
-.default-color-btn {
-    color: #314759;
-    background-color: #fff;
-    border-color: #314759;
-    box-shadow: 0px 0.1rem 0.15rem 0px rgba(0,0,0,.4);
-    border-radius: .15rem;
-}
-.default-color-btn-invert {
-    color: #fff;
-    background-color: #314759;
-    border-color: #314759;
-    box-shadow: 0px 0.1rem 0.15rem 0px rgba(0,0,0,.4);
-    border-radius: .15rem;
-}
-.default-color-btn:focus,
-.default-color-btn:hover,
-.default-color-btn-invert:focus,
-.default-color-btn-invert:hover {
-    box-shadow: none;
-}
-.default-color-text {
-    color: #314759;
+h1 {
+    padding: 20px 70px;
+    font-size: 5rem;
+    cursor: zoom-in;
+    user-select: none;
+    color: var(--primary-color);
     background-color: transparent;
-    border-color: #314759;
-}
-.default-color-text-surligned {
-    background-color: #314759;
-    border-color: #314759;
-    max-width: fit-content;
-    padding: 4px;
-    border-radius: 2px;
-}
-.default-color-border {
-    border-color: #314759;
 }
