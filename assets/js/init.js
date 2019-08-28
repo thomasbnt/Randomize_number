@@ -6,3 +6,18 @@ function Load(min, max) {
     document.getElementById('random').textContent = out
     document.title = out
 }
+async function registerSW() {
+    if (!navigator.serviceWorker) {return}
+
+    if (process.env.NODE_ENV !== 'production') {
+        const registrations = await navigator.serviceWorker.getRegistrations()
+        for (const reg of registrations) {
+            await reg.unregister()
+        } return
+    }
+
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(function () { console.log("✔ [Service Worker Registered] Offline mode available.")})
+    })
+}

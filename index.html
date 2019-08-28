@@ -24,13 +24,6 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="assets/js/init.js"></script>
     <script src="sw.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('sw.js')
-                .then(function () { console.log("✔ [Service Worker Registered] Offline mode available.")})
-        }
-    </script>
 </head>
 <body>
     <h1 id="random" onclick="Load(0,999)">Click!</h1>
