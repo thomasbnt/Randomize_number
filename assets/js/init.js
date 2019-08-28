@@ -9,7 +9,7 @@ function Load(min, max) {
 
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js").then(function(reg) {
-        console.log('✔ [Service Worker Registered] Offline mode available.\nWith scope: ', registration.scope)
+        console.log('✔ [Service Worker Registered] Offline mode available.\nWith scope: ', reg.scope)
     }).catch(function(err) {
         console.log('ServiceWorker registration failed: ', err)
     })
