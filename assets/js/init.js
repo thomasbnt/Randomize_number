@@ -9,11 +9,9 @@ function Load(min, max) {
 async function registerSW() {
     if (!navigator.serviceWorker) {return}
 
-    if (process.env.NODE_ENV !== 'production') {
-        const registrations = await navigator.serviceWorker.getRegistrations()
-        for (const reg of registrations) {
-            await reg.unregister()
-        } return
+    const registrations = await navigator.serviceWorker.getRegistrations()
+    for (const reg of registrations) {
+        await reg.unregister()
     }
 
     window.addEventListener('load', () => {
