@@ -7,12 +7,17 @@ function Load(min, max) {
     document.title = out
 }
 
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(function(reg) {
+        console.log("register", reg)
+    }).catch(function(err) {
+        console.log("err", err)
+    })
+}
+
 window.addEventListener('beforeinstallprompt', function(e) {
-
     e.userChoice.then(function(choiceResult) {
-
         console.log(choiceResult.outcome)
-
         if (choiceResult.outcome == 'dismissed') {
             console.log('User cancelled home screen install')
         } else {
@@ -21,12 +26,5 @@ window.addEventListener('beforeinstallprompt', function(e) {
     })
 })
 
-if (!navigator.serviceWorker) { console.log('!nagivator SW') }
-
-const registrations = navigator.serviceWorker.getRegistrations()
 
 
-window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js')
-        .then(function () { console.log("✔ [Service Worker Registered] Offline mode available.")})
-})

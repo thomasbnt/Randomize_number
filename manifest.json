@@ -1,6 +1,6 @@
 {
     "name": "Randomize_number",
-    "short_name": "R(Letter)",
+    "short_name": "R(Number)",
     "description": "It's just a randomizer of numbers.",
     "start_url": "./index.html",
     "display": "standalone",
