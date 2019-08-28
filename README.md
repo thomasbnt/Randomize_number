@@ -19,7 +19,7 @@ function Load(min, max) {
 ```
 <img src="assets/img/favicon.png" alt="Logo" align="right" />
 
-**Randomize_number** is a simple script with PWA (([Manifest](manifest.json) and [init.js for install SW](assets/js/init.js)) and [Service Worker](sw.js).
+**Randomize_number** is a simple script with PWA ([Manifest](manifest.json) and [init.js for install SW](assets/js/init.js)) and [Service Worker](sw.js).
 
 ## II Contributions
 
