@@ -5,14 +5,14 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
         caches.open(cacheName).then(function(cache) {
             return cache.addAll([
-                `/index.html`,
-                `/manifest.json`,
-                `/assets/css/app.css`,
-                `/assets/js/init.js`,
-                `/assets/img/manifest/192x192.png`,
-                `/assets/img/manifest/128x128.png`,
-                `/assets/img/manifest/512x512.png`,
-                `/assets/img/favicon.png`
+                `./index.html`,
+                `./manifest.json`,
+                `./assets/css/app.css`,
+                `./assets/js/init.js`,
+                `./assets/img/manifest/192x192.png`,
+                `./assets/img/manifest/128x128.png`,
+                `./assets/img/manifest/512x512.png`,
+                `./assets/img/favicon.png`
             ]).then(function() {
                 self.skipWaiting()
             })
