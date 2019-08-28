@@ -10,7 +10,7 @@ if (!navigator.serviceWorker) { console.log('!nagivator SW') }
 
 const registrations = await navigator.serviceWorker.getRegistrations()
 for (const reg of registrations) {
-    await reg.unregister()
+    reg.unregister()
 }
 
 window.addEventListener('load', () => {
