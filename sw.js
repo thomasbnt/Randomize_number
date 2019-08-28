@@ -2,8 +2,10 @@ const version = "1.0.0"
 const cacheName = `RN-${version}`
 self.addEventListener('install', e => {
     e.waitUntil(
-        caches.open(cacheName).then(cache => {
-            return cache.addAll([
+    caches.open(cacheName).then(cache => {
+        console.log('[Service Worker] Fetching resource: ' + e.request)
+
+        return cache.addAll([
                 `/index.html`,
                 `/manifest.json`,
                 `/assets/css/app.css`,
